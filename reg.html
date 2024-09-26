@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education</title>
+  </head>
+  <body background="./image/sky.webp">
+    <h1>Registration Form</h1>
+    <form action="/submit" method="post">
+      <fieldset>
+        <legend>PersonalDetails</legend>
+        <table>
+          <tr>
+            <td><label for="First name">FirstName:</label></td>
+            <td>
+              <input
+                type="text"
+                id="username"
+                name="fname"
+                placeholder="Ex-Rohit"
+                size="15"
+                maxlength="15"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="SurName name">SurName:</label></td>
+            <td>
+              <input
+                type="text"
+                id="username"
+                name="lname"
+                placeholder="Ex-Ravinder"
+                size="15"
+                maxlength="15"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Mobile number">mob:</label></td>
+            <td>
+              <input
+                type="tel"
+                id="Mobile"
+                name=""
+                placeholder="637-198-0784"
+                size="15"
+                maxlength="15"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ex-rohit@gmail.com"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="min 8 characters"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="confirm-password">Confirm Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder="min 8 characters"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="birthdate">Birthdate:</label></td>
+            <td><input type="date" id="birthdate" name="birthdate" /></td>
+          </tr>
+          <tr><td><label for="gender">Gender:</label></td>
+            <td> <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option></select
+              ></td></tr>
+              <tr><td><label for="Select county">select county:</label></td>
+                <td> <select id="county" name="county">
+                    <option value="INDIA">INDIA</option>
+                    <option value="USA">USA</option>
+                    <option value="CHINA">CHINA</option></select
+                  ></td></tr>
+                  <tr><td> <label>Upload picture</label><input type="file" name="pic" /></td>
+                  </tr>
+        </table>
+
+       <br />
+        <input type="submit" value="Register" />
+      </fieldset>
+      <fieldset>
+        <legend>CourseDetails</legend>
+        <label>Select Course </label>
+        <select name="Course">
+          <option value="JF">Java Fullstack</option>
+          <option value="DFD">Data Structure & algorithms</option>
+          <option value="PF">Python Fullstack</option></select
+        ><br />
+        <label>Deliver Mode</label>
+        <input type="checkbox" name="Mode1" value="ON" />ONLINE
+        <input type="checkbox" name="Mode2" value="OFF" />OFFLINE<br />
+        <label>Comments</label><br />
+        <textarea rows="4" cols="40"></textarea>
+      </fieldset>
+      <img
+        src="./image/submit-button.jpg"
+        height="80"
+        width="80"
+        type="input"
+      />
+    </form>
+  </body>
+</html>
